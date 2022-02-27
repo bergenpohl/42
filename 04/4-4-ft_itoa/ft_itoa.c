@@ -27,8 +27,6 @@ char	*ft_itoa(int nbr) {
 		nbr /= 10;
 		i = is_negative ? (nbr % 10) * -1 : nbr % 10;
 	}
-	if (is_negative) {
-		a[0] = '-';
-	}
+	if (is_negative) a[0] = '-';
 	return a;
 }
