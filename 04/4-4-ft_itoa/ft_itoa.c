@@ -1,10 +1,10 @@
 #include <stdlib.h>
 
 char	*ft_itoa(int nbr) {
-	char			*a;
-	size_t			len;
-	int				is_negative;
-	int				i;
+	char	*a;
+	size_t	len;
+	int	is_negative;
+	int	i;
 	
 	if (nbr == 0) {
 		a = (char *)malloc(sizeof(char) * 2);
@@ -12,13 +12,8 @@ char	*ft_itoa(int nbr) {
 		a[1] = '\0';
 		return a;
 	}
-	if (nbr < 0) {
-		is_negative = 1;
-		len = 1;
-	} else {
-		is_negative = 0;
-		len = 0;
-	}
+	is_negative = nbr < 0 ? 1 : 0;
+	len = is_negative;
 	i = nbr;
 	while (i != 0) {
 		len++;
