@@ -1,6 +1,6 @@
 unsigned char	reverse_bits(unsigned char octet) {
-	unsigned char r;
-	int i;
+	unsigned char	r;
+	int		i;
 
 	r = 0;
 	i = 0;
