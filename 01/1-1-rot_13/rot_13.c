@@ -1,6 +1,6 @@
 #include <unistd.h>
 
-void rot_13(char *arg) {
+void	rot_13(char *arg) {
 	char c;
 	
 	while (*arg != '\0') {
@@ -15,7 +15,7 @@ void rot_13(char *arg) {
 	}
 }
 
-int main(int argc, char*argv[]) {
+int	main(int argc, char*argv[]) {
 	if (argc == 2) rot_13(argv[1]);
 	write(1, "\n", 1);
 	return 0;
