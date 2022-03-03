@@ -1,8 +1,8 @@
 #include <stdlib.h>
 
 char    *ft_strdup(char *src) {
-	size_t i;
-	char *ret;
+	size_t	i;
+	char	*ret;
 	
 	i = 0;
 	while (src[i] != '\0') {
