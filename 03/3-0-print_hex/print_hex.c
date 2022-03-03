@@ -1,6 +1,6 @@
 #include <unistd.h>
 
-int my_atoi(const char *str) {
+int	my_atoi(const char *str) {
 	int i;
 	
 	i = 0;
@@ -12,7 +12,7 @@ int my_atoi(const char *str) {
 	return i;
 }
 
-void print_hex(char *str) {
+void	print_hex(char *str) {
 	int		n;
 	int		i;
 	char	c;
@@ -31,7 +31,7 @@ void print_hex(char *str) {
 	}
 }
 
-int main(int argc, char *argv[]) {
+int	main(int argc, char *argv[]) {
 	if (argc == 2) print_hex(argv[1]);
 	write(1, "\n", 1);
 	return 0;
