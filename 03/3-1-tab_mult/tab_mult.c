@@ -1,7 +1,6 @@
 #include <unistd.h>
-#include <stdio.h>
 
-int my_atoi(char *str) {
+int	my_atoi(char *str) {
 	int i;
 	
 	i = 0;
@@ -13,7 +12,7 @@ int my_atoi(char *str) {
 	return i;
 }
 
-void iout(int i) {
+void	iout(int i) {
 	int q;
 	int n;
 	char c;
@@ -32,7 +31,7 @@ void iout(int i) {
 	}
 }
 
-void tab_mult(char *arg) {
+void	tab_mult(char *arg) {
 	int n;
 	int i;
 	
@@ -49,11 +48,8 @@ void tab_mult(char *arg) {
 	}
 }
 
-int main(int argc, char *argv[]) {
-	if (argc == 2) {
-		tab_mult(argv[1]);
-	} else {
-		write(1, "\n", 1);
-	}
+int	main(int argc, char *argv[]) {
+	if (argc == 2) tab_mult(argv[1]);
+	else write(1, "\n", 1);
 	return 0;
 }
