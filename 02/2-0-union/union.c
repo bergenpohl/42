@@ -1,8 +1,8 @@
 #include <unistd.h>
 
-int is_not_in(char *s, size_t i) {
-	size_t j;
-	char c;
+int	is_not_in(char *s, size_t i) {
+	size_t	j;
+	char	c;
 	
 	j = 0;
 	c = s[i];
@@ -13,9 +13,9 @@ int is_not_in(char *s, size_t i) {
 	return 1;
 }
 
-void ft_union(char *a, char *b) {
-	size_t i;
-	size_t j;
+void	ft_union(char *a, char *b) {
+	size_t	i;
+	size_t	j;
 
 	i = 0;
 	while (a[i] != '\0') {
