@@ -1,9 +1,9 @@
 #include <unistd.h>
 
-void str_capitalizer(int len, char **strings) {
-	int		i;
+void	str_capitalizer(int len, char **strings) {
+	int	i;
 	char	*str;
-	int		isIn;
+	int	isIn;
 	
 	i = 0;
 	while (i < len) {
@@ -11,11 +11,8 @@ void str_capitalizer(int len, char **strings) {
 		isIn = 0;
 		while (*str != '\0') {
 			if (*str != '\t' && *str != ' ') {
-				if (*str >= 'a' && *str <= 'z' && !isIn) {
-					*str = (*str - 'a') + 'A';
-				} else if (*str >= 'A' && *str <= 'Z' && isIn) {
-					*str = (*str - 'A') + 'a';
-				}
+				if (*str >= 'a' && *str <= 'z' && !isIn) *str = (*str - 'a') + 'A';
+				else if (*str >= 'A' && *str <= 'Z' && isIn) *str = (*str - 'A') + 'a';
 				isIn = 1;
 			} else {
 				isIn = 0;
@@ -28,7 +25,7 @@ void str_capitalizer(int len, char **strings) {
 	}
 }
 
-int main(int argc, char *argv[]) {
+int	main(int argc, char *argv[]) {
 	str_capitalizer(argc - 1, argv + 1);
 	return 0;
 }
