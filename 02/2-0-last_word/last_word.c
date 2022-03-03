@@ -1,9 +1,9 @@
 #include <unistd.h>
 
-void last_word(char *str) {
-	char *a;
-	char *b;
-	int state;
+void	last_word(char *str) {
+	char	*a;
+	char	*b;
+	int	state;
 
 	a = NULL;
 	b = NULL;
@@ -18,14 +18,11 @@ void last_word(char *str) {
 		}
 		str++;
 	}
-	if (state == 0) {
-		write(1, a, b - a);
-	} else {
-		write(1, a, str - a);
-	}
+	if (state == 0) write(1, a, b - a);
+	else write(1, a, str - a);
 }
 
-int main(int argc, char *argv[]) {
+int	main(int argc, char *argv[]) {
 	if (argc == 2) last_word(argv[1]);
 	write(1, "\n", 1);
 	return 0;
