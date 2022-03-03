@@ -1,13 +1,13 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-int pawn(int x, int y, int size, char *board[]) {
+int	pawn(int x, int y, int size, char *board[]) {
 	if (x - 1 >= 0 && y - 1 >= 0 && board[y - 1][x - 1] == 'K') return 1;
 	if (x + 1 < size && y - 1 >= 0 && board[y - 1][x + 1] == 'K') return 1;
 	return 0;
 }
 
-int bishop(int x, int y, int size, char *board[]) {
+int	bishop(int x, int y, int size, char *board[]) {
 	int i;
 	
 	i = 1;
@@ -33,7 +33,7 @@ int bishop(int x, int y, int size, char *board[]) {
 	return 0;
 }
 
-int rook(int x, int y, int size, char *board[]) {
+int	rook(int x, int y, int size, char *board[]) {
 	int i;
 	
 	i = 1;
@@ -59,7 +59,7 @@ int rook(int x, int y, int size, char *board[]) {
 	return 0;
 }
 
-int checkmate(int size, char *board[]) {
+int	checkmate(int size, char *board[]) {
 	int row;
 	int column;
 	
@@ -83,7 +83,7 @@ int checkmate(int size, char *board[]) {
 	return 0;
 }
 
-int main(int argc, char *argv[]) {
+int	main(int argc, char *argv[]) {
 	if (argc > 1) {
 		if (checkmate(argc - 1, argv + 1)) {
 			write(1, "Success", 7);
