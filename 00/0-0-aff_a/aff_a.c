@@ -1,6 +1,6 @@
 #include <unistd.h>
 
-int aff(char *arg) {
+int	aff(char *arg) {
 	while (*arg != '\0') {
 		if (*arg == 'a') return 1;
 		arg++;
@@ -8,7 +8,7 @@ int aff(char *arg) {
 	return 0;
 }
 
-int main(int argc, char *argv[]) {
+int	main(int argc, char *argv[]) {
 	if (argc != 2 || aff(argv[1])) {
 		write(1, "a", 1);
 	}
