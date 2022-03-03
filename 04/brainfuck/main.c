@@ -5,8 +5,9 @@
 #define OPERATIONS 2048
 
 uint8_t	*loopForward(register uint8_t *args) {
-	register uint16_t others = 0;
+	register uint16_t others;
 	
+	others = 0;
 	args++;
 	while (*args != ']' || others) {
 		switch (*args) {
@@ -25,8 +26,9 @@ uint8_t	*loopForward(register uint8_t *args) {
 }
 
 uint8_t	*loopBackward(register uint8_t *args) {
-	register uint16_t others = 0;
+	register uint16_t others;
 	
+	others = 0;
 	args--;
 	while (*args != '[' || others) {
 		switch (*args) {
@@ -45,10 +47,13 @@ uint8_t	*loopBackward(register uint8_t *args) {
 }
 
 void	bf(register uint8_t *args) {
-	register uint8_t *ptr = (uint8_t *)malloc(sizeof(uint8_t) * OPERATIONS);
-	register uint8_t *t = ptr;
-	register uint16_t i = 0;
+	register uint8_t	*ptr;
+	register uint8_t	*t;
+	register uint16_t	i;
 	
+	ptr = (uint8_t *)malloc(sizeof(uint8_t) * OPERATIONS);
+	t = ptr;
+	i = 0;
 	while (i < OPERATIONS) {
 		ptr[i] = 0;
 		++i;
