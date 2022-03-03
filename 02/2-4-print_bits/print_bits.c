@@ -1,6 +1,6 @@
 void	printbits(unsigned char octet) {
-	unsigned char i;
-	char cs[8];
+	unsigned char	i;
+	char		cs[8];
 	
 	i = 0;
 	while (i < 8) {
