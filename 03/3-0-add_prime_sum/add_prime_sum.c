@@ -1,6 +1,6 @@
 #include <unistd.h>
 
-void iout(int i) {
+void	iout(int i) {
 	int q;
 	int n;
 	char c;
@@ -19,7 +19,7 @@ void iout(int i) {
 	}
 }
 
-int ft_atoi(char *str) {
+int	ft_atoi(char *str) {
 	int i;
 	int sign;
 
@@ -42,7 +42,7 @@ int ft_atoi(char *str) {
 	return i * sign;
 }
 
-int is_prime(int i) {
+int	is_prime(int i) {
 	int j;
 	
 	j = 2;
@@ -53,7 +53,7 @@ int is_prime(int i) {
 	return 1;
 }
 
-void add_prime_sum(int i) {
+void	add_prime_sum(int i) {
 	int res;
 	int j;
 	
@@ -66,7 +66,7 @@ void add_prime_sum(int i) {
 	iout(res);
 }
 
-int main(int argc, char *argv[]) {
+int	main(int argc, char *argv[]) {
 	int i;
 	
 	if (argc == 2) {
