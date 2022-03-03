@@ -1,6 +1,6 @@
 #include <unistd.h>
 
-void search_and_replace(char *str, char *sea, char *rep) {
+void	search_and_replace(char *str, char *sea, char *rep) {
 	int i;
 	
 	while (*str != '\0') {
@@ -13,7 +13,7 @@ void search_and_replace(char *str, char *sea, char *rep) {
 	}
 }
 
-size_t ft_strlen(char *str) {
+size_t	ft_strlen(char *str) {
 	size_t i;
 
 	i = 0;
@@ -23,7 +23,7 @@ size_t ft_strlen(char *str) {
 	return i;
 }
 
-int main(int argc, char *argv[]) {
+int	main(int argc, char *argv[]) {
 	if (argc == 4) {
 		if (ft_strlen(argv[2]) == 1 && ft_strlen(argv[3]) == 1) search_and_replace(argv[1], argv[2], argv[3]);
 	}
