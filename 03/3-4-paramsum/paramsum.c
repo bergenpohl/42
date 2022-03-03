@@ -1,6 +1,6 @@
 #include <unistd.h>
 
-void iout(int i) {
+void	iout(int i) {
 	int q;
 	int n;
 	char c;
@@ -19,12 +19,12 @@ void iout(int i) {
 	}
 }
 
-void paramsum(int i) {
+void	paramsum(int i) {
 	iout(i);
 	write(1, "\n", 1);
 }
 
-int main(int argc, char *argv[]) {
+int	main(int argc, char *argv[]) {
 	paramsum(argc - 1);
 	return 0;
 }
