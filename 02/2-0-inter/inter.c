@@ -1,6 +1,6 @@
 #include <unistd.h>
 
-void inter(char *a, char *b) {
+void	inter(char *a, char *b) {
 	size_t ia;
 	size_t ib;
 	size_t ic;
@@ -24,7 +24,7 @@ void inter(char *a, char *b) {
 	}
 }
 
-int main(int argc, char *argv[]) {
+int	main(int argc, char *argv[]) {
 	if (argc == 3) inter(argv[1], argv[2]);
 	write(1, "\n", 1);
 	return 0;
