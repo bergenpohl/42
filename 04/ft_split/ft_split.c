@@ -3,8 +3,8 @@
 typedef struct		s_list
 {
 	struct s_list	*next;
-	char			*str;
-}					t_list;
+	char		*str;
+}			t_list;
 
 void	listadd(t_list **list, char *str) {
 	t_list *i;
