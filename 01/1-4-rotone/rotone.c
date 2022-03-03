@@ -1,6 +1,6 @@
 #include <unistd.h>
 
-void rotone(char *arg) {
+void	rotone(char *arg) {
 	size_t i;
 	char c;
 	
@@ -17,7 +17,7 @@ void rotone(char *arg) {
 	write(1, arg, i);
 }
 
-int main(int argc, char *argv[]) {
+int	main(int argc, char *argv[]) {
 	if (argc == 2) rotone(argv[1]);
 	write(1, "\n", 1);
 	return 0;
