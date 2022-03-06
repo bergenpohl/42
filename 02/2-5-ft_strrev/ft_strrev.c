@@ -1,6 +1,6 @@
 char    *ft_strrev(char *str) {
-	size_t i, j, len;
-	char c;
+	size_t	i, j, len;
+	char	c;
 	
 	len = 0;
 	while (str[len] != '\0') {

@@ -1,8 +1,8 @@
 #include <unistd.h>
 
-void alpha_mirror(char *str) {
-	size_t i;
-	char c;
+void	alpha_mirror(char *str) {
+	size_t	i;
+	char	c;
 
 	i = 0;
 	while ((c = str[i]) != '\0') {
@@ -16,7 +16,7 @@ void alpha_mirror(char *str) {
 	write(1, str, i);
 }
 
-int main(int argc, char *argv[]) {
+int	main(int argc, char *argv[]) {
 	if (argc == 2) alpha_mirror(argv[1]);
 	write(1, "\n", 1);
 	return 0;

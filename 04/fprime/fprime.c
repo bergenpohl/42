@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void fprime(int i) {
+void	fprime(int i) {
 	int v;
 	
 	v = 2;
@@ -16,7 +16,7 @@ void fprime(int i) {
 	printf("%d", i);
 }
 
-int main(int argc, char *argv[]) {
+int	main(int argc, char *argv[]) {
 	if (argc == 2) fprime(atoi(argv[1]));
 	printf("\n");
 	return 0;

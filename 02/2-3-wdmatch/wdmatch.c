@@ -1,6 +1,6 @@
 #include <unistd.h>
 
-void wdmatch(char *a, char *b) {
+void	wdmatch(char *a, char *b) {
 	size_t i;
 	
 	i = 0;
@@ -17,7 +17,7 @@ void wdmatch(char *a, char *b) {
 	
 }
 
-int main(int argc, char *argv[]) {
+int	main(int argc, char *argv[]) {
 	if (argc == 3) wdmatch(argv[1], argv[2]);
 	write(1, "\n", 1);
 	return 0;
