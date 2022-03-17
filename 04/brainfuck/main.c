@@ -46,12 +46,12 @@ uint8_t	*loopBackward(register uint8_t *args) {
 	return (args);
 }
 
-void	bf(register uint8_t *args) {
-	register uint8_t	*ptr;
-	register uint8_t	*t;
-	register uint16_t	i;
+void	bf(char *args) {
+	char	*ptr;
+	int 	*t;
+	int	ii;
 	
-	ptr = (uint8_t *)malloc(sizeof(uint8_t) * OPERATIONS);
+	ptr = (char *)malloc(sizeof(uint8_t) * OPERATIONS);
 	t = ptr;
 	i = 0;
 	while (i < OPERATIONS) {
@@ -59,37 +59,27 @@ void	bf(register uint8_t *args) {
 		++i;
 	}
 	while (*args) {
-		switch (*args) {
-			case '>':
-				ptr++;
-				break;
-			case '<':
-				ptr--;
-				break;
-			case '+':
-				(*ptr)++;
-				break;
-			case '-':
-				(*ptr)--;
-				break;
-			case '.':
-				write(1, ptr, 1);
-				break;
-			case '[':
-				if (!(*ptr)) args = loopForward(args);
-				break;
-			case ']':
-				if (*ptr) args = loopBackward(args);
-				break;
-			default:
-				break;
+		if (*args == '>') {
+			ptr++;
+		} else if (*args == '<') {
+			ptr--;
+		} else if (*args == '+') {
+			(*ptr)++;
+		} else if (*args == '-') {
+			(*ptr)--;
+		} else if (*args == '.') {
+			write(1, ptr, 1);
+		} else if (*args == '[') {
+			if (!(*ptr)) args = loopForward(args);
+		} else if (*args == ']') {
+			if (*ptr) args = loopBackward(args);
 		}
 		args++;
 	}
 	free(t);
 }
 
-int	main(int argc, char **argv) {
+int	main(int argc, char *argv[]) {
 	if (argc == 2) bf((uint8_t *)(argv[1]));
 	return (0);
 }
