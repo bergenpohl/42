@@ -43,8 +43,8 @@ char	*loopBackward(char *args) {
 
 void	bf(char *args) {
 	char	*ptr;
-	int 	*t;
-	int	ii;
+	char 	*t;
+	int	i;
 	
 	ptr = (char *)malloc(sizeof(char) * OPERATIONS);
 	t = ptr;
