@@ -4,29 +4,24 @@
 
 #define OPERATIONS 2048
 
-uint8_t	*loopForward(register uint8_t *args) {
-	register uint16_t others;
+char	*loopForward(char *args) {
+	int others;
 	
 	others = 0;
 	args++;
 	while (*args != ']' || others) {
-		switch (*args) {
-			case '[':
-				others++;
-				break;
-			case ']':
-				others--;
-				break;
-			default:
-				break;
+		if (*args == '[') {
+			others++;
+		} else if (*args == ']') {
+			others--;
 		}
 		args++;
 	}
 	return (args);
 }
 
-uint8_t	*loopBackward(register uint8_t *args) {
-	register uint16_t others;
+char	*loopBackward(char *args) {
+	int others;
 	
 	others = 0;
 	args--;
@@ -51,7 +46,7 @@ void	bf(char *args) {
 	int 	*t;
 	int	ii;
 	
-	ptr = (char *)malloc(sizeof(uint8_t) * OPERATIONS);
+	ptr = (char *)malloc(sizeof(char) * OPERATIONS);
 	t = ptr;
 	i = 0;
 	while (i < OPERATIONS) {
@@ -80,6 +75,6 @@ void	bf(char *args) {
 }
 
 int	main(int argc, char *argv[]) {
-	if (argc == 2) bf((uint8_t *)(argv[1]));
+	if (argc == 2) bf(argv[1]);
 	return (0);
 }
