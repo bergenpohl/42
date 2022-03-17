@@ -1,6 +1,5 @@
 #include <unistd.h>
 #include <stdlib.h>
-#include <stdint.h>
 
 #define OPERATIONS 2048
 
