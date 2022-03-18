@@ -20,3 +20,19 @@ int	ft_atoi(const char *str) {
 	}
 	return i * sign;
 }
+
+/*
+#include <stdio.h>
+
+// -2147483648
+// 2147483647
+
+int	main() {
+	char	str[] = "-2147483648";
+	int	i;
+
+	i = ft_atoi(str);
+	printf("%d\n", i);
+	return 0;
+}
+*/
