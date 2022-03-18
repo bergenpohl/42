@@ -1,8 +1,8 @@
 #include <unistd.h>
 
 void	rotone(char *arg) {
-	size_t i;
-	char c;
+	size_t	i;
+	char	c;
 	
 	i = 0;
 	while (arg[i] != '\0') {
