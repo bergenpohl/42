@@ -9,3 +9,12 @@ void	ft_putstr(char *str) {
 	}
 	write(1, str, len);
 }
+
+/*
+int	main() {
+	char str[] = "Hello, world!";
+
+	ft_putstr(str);
+	return 0;
+}
+*/

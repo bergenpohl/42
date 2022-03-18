@@ -7,3 +7,16 @@ int	ft_strlen(char *str) {
 	}
 	return i;
 }
+
+/*
+#include <stdio.h>
+
+int	main() {
+	char	str[] = "Hello, world!";
+	int	i;
+
+	i = ft_strlen(str);
+	printf("%d\n", i);
+	return 0;
+}
+*/
