@@ -1,8 +1,8 @@
 #include <unistd.h>
 
 void	repeat_alpha(char *str) {
-	char c;
-	int i;
+	char	c;
+	int	i;
 
 	while (*str != '\0') {
 		c = *str;
