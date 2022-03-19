@@ -1,9 +1,9 @@
 #include <unistd.h>
 
 void	iout(int i) {
-	int q;
-	int n;
-	char c;
+	int	q;
+	int	n;
+	char	c;
 	
 	n = i / 10;
 	q = 1;
