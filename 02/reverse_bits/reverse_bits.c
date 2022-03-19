@@ -12,3 +12,18 @@ unsigned char	reverse_bits(unsigned char octet) {
 	}
 	return r;
 }
+
+/*
+#include "../print_bits/print_bits.c"
+
+int	main() {
+	unsigned char c = 'a';
+	unsigned char r;
+	
+	r = reverse_bits(c);
+	printbits(c);
+	write(1, "\n", 1);
+	printbits(r);
+	return 0;
+}
+*/

@@ -1,3 +1,5 @@
+#include <unistd.h>
+
 void	printbits(unsigned char octet) {
 	unsigned char	i;
 	char		cs[8];
@@ -10,3 +12,12 @@ void	printbits(unsigned char octet) {
 	}
 	write(1, cs, 8);
 }
+
+/*
+int	main() {
+	unsigned char c = 'a';
+
+	printbits(c);
+	return 0;
+}
+*/

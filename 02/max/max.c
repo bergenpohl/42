@@ -10,3 +10,16 @@ int	max(int* tab, unsigned int len) {
 	}
 	return max;
 }
+
+/*
+#include <stdio.h>
+
+int	main() {
+	int nbrs[] = {1, 2, 300, 4, 5, 6, 7, 8, 100, 21};
+	int m;
+	
+	m = max(nbrs, 10);
+	printf("%d\n", m);
+	return 0;
+}
+*/
