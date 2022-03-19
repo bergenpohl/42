@@ -17,3 +17,17 @@ char    *ft_strdup(char *src) {
 	ret[0] = src[0];
 	return ret;
 }
+
+/*
+#include <stdio.h>
+
+int	main(int argc, char *argv[]) {
+	char a[] = "Hello, world!";
+	char *b;
+
+	b = ft_strdup(a);
+	printf("%s\n", b);
+	free(b);
+	return 0;
+}
+*/

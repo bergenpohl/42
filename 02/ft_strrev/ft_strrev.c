@@ -1,3 +1,5 @@
+#include <stddef.h>
+
 char    *ft_strrev(char *str) {
 	size_t	i, j, len;
 	char	c;
@@ -16,3 +18,15 @@ char    *ft_strrev(char *str) {
 	}
 	return str;
 }
+
+/*
+#include <stdio.h>
+
+int	main(int argc, char *argv[]) {
+	char str[] = "Hello, world!";
+	
+	ft_strrev(str);
+	printf("%s\n", str);
+	return 0;
+}
+*/
