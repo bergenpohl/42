@@ -22,3 +22,26 @@ int     *ft_rrange(int start, int end) {
 	}
 	return range;
 }
+
+/*
+#include <stdio.h>
+
+int	main() {
+	int *range;
+	int start;
+	int end;
+	int i;
+	int r;
+
+	start = -15;
+	end = 5;
+	range = ft_rrange(start, end);
+	r = end < start ? start - end : end - start;
+	i = 0;
+	while (i <= r) {
+		printf("%d: %d\n", i, range[i]);
+		i++;
+	}
+	return 0;
+}
+*/

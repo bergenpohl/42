@@ -1,9 +1,9 @@
 int	ft_atoi_base(const char *str, int str_base) {
-	int		i;
-	int		sign;
+	int	i;
+	int	sign;
 	char	c;
 	char	chars[] = "0123456789abcdef";
-	int		n;
+	int	n;
 	
 	sign = *str == '-' ? -1 : 1;
 	if (str_base > 16) str_base = 16;
@@ -24,3 +24,15 @@ int	ft_atoi_base(const char *str, int str_base) {
 	}
 	return i * sign;
 }
+
+/*
+#include <stdio.h>
+
+int	main() {
+	int i;
+
+	i = ft_atoi_base("13", 8);
+	printf("%d\n", i);
+	return 0;
+}
+*/
