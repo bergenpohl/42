@@ -1,8 +1,8 @@
 #include <unistd.h>
 
 int	main() {
-	int i = 25;
-	char c;
+	int	i = 25;
+	char	c;
 
 	while (i >= 0) {
 		c = 'a' + i;
