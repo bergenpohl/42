@@ -31,3 +31,14 @@ char	*ft_itoa_base(int value, int base) {
 	if (len) a[0] = '-';
 	return a;
 }
+
+#include <stdio.h>
+
+int	main() {
+	char *a;
+
+	a = ft_itoa_base(12345, 6);
+	printf("%s\n", a);
+	free(a);
+	return 0;
+}

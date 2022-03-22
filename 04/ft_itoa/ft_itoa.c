@@ -30,3 +30,16 @@ char	*ft_itoa(int nbr) {
 	if (is_negative) a[0] = '-';
 	return a;
 }
+
+/*
+#include <stdio.h>
+
+int	main() {
+	char *a;
+
+	a = ft_itoa(-12345);
+	printf("%s\n", a);
+	free(a);
+	return 0;
+}
+*/

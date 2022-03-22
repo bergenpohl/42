@@ -6,3 +6,10 @@ void    ft_list_foreach(t_list *begin_list, void (*f)(void *)) {
 		begin_list = begin_list->next;
 	}
 }
+
+#include <stdio.h>
+
+int	main() {
+	
+	return 0;
+}

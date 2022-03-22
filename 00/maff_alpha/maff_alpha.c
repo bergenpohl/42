@@ -1,8 +1,8 @@
 #include <unistd.h>
 
 int	main() {
-	int i = 0;
-	char c;
+	int	i = 0;
+	char	c;
 
 	while (i < 26) {
 		c = 'a' + i;

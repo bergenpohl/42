@@ -1,9 +1,10 @@
 #include <unistd.h>
 
 int	main() {
-	int	i = 25;
+	int	i;
 	char	c;
 
+	i = 25;
 	while (i >= 0) {
 		c = 'a' + i;
 		if (i % 2 == 0) c -= 32;
