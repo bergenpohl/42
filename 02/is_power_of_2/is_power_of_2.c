@@ -1,8 +1,10 @@
-int	is_power_of_2(unsigned int n) {
+int	is_power_of_2(unsigned int n)
+{
 	int res;
 	
 	res = 0;
-	while (n) {
+	while (n)
+	{
 		res += n & 1;
 		n = n >> 1;
 	}
@@ -12,7 +14,8 @@ int	is_power_of_2(unsigned int n) {
 /*
 #include <stdio.h>
 
-int	main() {
+int	main()
+{
 	unsigned int a;
 	unsigned int b;
 

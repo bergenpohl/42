@@ -1,4 +1,5 @@
-unsigned char	swap_bits(unsigned char octet) {
+unsigned char	swap_bits(unsigned char octet)
+{
 	unsigned char res;
 
 	res = octet & 15;
@@ -11,7 +12,8 @@ unsigned char	swap_bits(unsigned char octet) {
 /*
 #include "../print_bits/print_bits.c"
 
-int	main() {
+int	main()
+{
 	unsigned char c = 'a';
 	unsigned char r;
 

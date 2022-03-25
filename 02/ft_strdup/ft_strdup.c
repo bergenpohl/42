@@ -1,16 +1,18 @@
 #include <stdlib.h>
 
-char    *ft_strdup(char *src) {
+char    *ft_strdup(char *src)
+{
 	size_t	i;
 	char	*ret;
 	
 	i = 0;
-	while (src[i] != '\0') {
+	while (src[i] != '\0')
 		++i;
-	}
 	ret = (char *)malloc(i + 1);
-	if (ret == NULL) return NULL;
-	while(i) {
+	if (ret == NULL)
+		return NULL;
+	while(i)
+	{
 		ret[i] = src[i];
 		i--;
 	}
@@ -21,7 +23,8 @@ char    *ft_strdup(char *src) {
 /*
 #include <stdio.h>
 
-int	main(int argc, char *argv[]) {
+int	main(int argc, char *argv[])
+{
 	char a[] = "Hello, world!";
 	char *b;
 

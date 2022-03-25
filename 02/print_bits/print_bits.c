@@ -1,11 +1,13 @@
 #include <unistd.h>
 
-void	printbits(unsigned char octet) {
+void	printbits(unsigned char octet)
+{
 	unsigned char	i;
 	char		cs[8];
 	
 	i = 0;
-	while (i < 8) {
+	while (i < 8)
+	{
 		cs[i] = '0' + (octet & 128 ? 1 : 0);
 		octet = octet << 1;
 		i++;
@@ -14,7 +16,8 @@ void	printbits(unsigned char octet) {
 }
 
 /*
-int	main() {
+int	main()
+{
 	unsigned char c = 'a';
 
 	printbits(c);
