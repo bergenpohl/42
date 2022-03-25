@@ -1,10 +1,12 @@
 #include "ft_list.h"
 
-int	ft_list_size(t_list *begin_list) {
+int	ft_list_size(t_list *begin_list)
+{
 	int len;
 	
 	len = 0;
-	while (begin_list != NULL) {
+	while (begin_list != NULL)
+	{
 		len++;
 		begin_list = begin_list->next;
 	}
@@ -15,7 +17,8 @@ int	ft_list_size(t_list *begin_list) {
 #include <stdio.h>
 #include <stdlib.h>
 
-int	main() {
+int	main()
+{
 	t_list	*lst;
 
 	lst = (t_list *)malloc(sizeof(t_list));
