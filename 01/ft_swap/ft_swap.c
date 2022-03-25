@@ -1,4 +1,5 @@
-void	ft_swap(int *a, int *b) {
+void	ft_swap(int *a, int *b)
+{
 	int c;
 
 	c = *a;
@@ -9,7 +10,8 @@ void	ft_swap(int *a, int *b) {
 /*
 #include <stdio.h>
 
-int	main() {
+int	main()
+ {
 	int a = 7;
 	int b = 19;
 
