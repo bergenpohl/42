@@ -1,41 +1,48 @@
 #include "t_point.h"
 
-void	flood_fill(char **tab, t_point size, t_point begin) {
+void	flood_fill(char **tab, t_point size, t_point begin)
+{
 	t_point	next;
 	char	c;
 	
 	c = tab[begin.y][begin.x];
 	tab[begin.y][begin.x] = "F";
-	if (begin.x - 1 > 0 && tab[begin.y][begin.x - 1] == c) {
+	if (begin.x - 1 > 0 && tab[begin.y][begin.x - 1] == c)
+	{
 		next = begin;
 		next.x -= 1;
 		flood_fill(tab, size, next);
 	}
-	if (begin.y - 1 > 0 && tab[begin.y - 1][begin.x] == c) {
+	if (begin.y - 1 > 0 && tab[begin.y - 1][begin.x] == c)
+	{
 		next = begin;
 		next.y -= 1;
 		flood_fill(tab, size, next);
 	}
-	if (begin.x + 1 < (size.x - 1) && tab[begin.y][begin.x + 1] == c) {
+	if (begin.x + 1 < (size.x - 1) && tab[begin.y][begin.x + 1] == c)
+	{
 		next = begin;
 		next.x += 1;
 		flood_fill(tab, size, next);
 	}
-	if (begin.y + 1 < (size.y - 1) && tab[begin.y + 1][begin.x] == c) {
+	if (begin.y + 1 < (size.y - 1) && tab[begin.y + 1][begin.x] == c)
+	{
 		next = begin;
 		next.y += 1;
 		flood_fill(tab, size, next);
 	}
 }
 
-
+/*
 #include <stdio.h>
 
-void	print_tab() {
+void	print_tab()
+{
 	
 }
 
-char	**make_area(char **zone) {
+char	**make_area(char **zone)
+{
 		
 }
 
@@ -57,3 +64,4 @@ int	main(void) {
 	print_tab(area);
 	return (0);
 }
+*/
